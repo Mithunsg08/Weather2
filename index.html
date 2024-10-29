@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Current Weather Overview -->
+        <section class="current-weather">
+            <h1>84°F</h1>
+            <p>Sunny</p>
+            <p>Location: City Name</p>
+        </section>
+
+        <!-- 5-Day Forecast -->
+        <section class="forecast">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-cards">
+                <!-- Example day -->
+                <div class="day-card">
+                    <p>Mon</p>
+                    <img src="sunny-icon.png" alt="Sunny">
+                    <p>68°F / 48°F</p>
+                </div>
+                <!-- Repeat similar day cards -->
+            </div>
+        </section>
+
+        <!-- Temperature Graph -->
+        <section class="temperature-graph">
+            <h2>Temperature Trend</h2>
+            <canvas id="tempChart" width="400" height="150"></canvas>
+        </section>
+
+        <!-- Weather Details -->
+        <section class="weather-details">
+            <h2>Weather Details</h2>
+            <div class="detail-item">Humidity: 50%</div>
+            <div class="detail-item">Wind Speed: 11 mph</div>
+            <div class="detail-item">Pressure: 29.85 in</div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Interactivity and Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
