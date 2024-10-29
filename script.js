@@ -65,7 +65,8 @@ function getLocation() {
             const { latitude, longitude } = position.coords;
             fetchWeatherData(latitude, longitude);
         }, () => {
-            alert("Unable to retrieve your location.");
+            alert("Unable to retrieve your location. Please check your browser settings to allow location access.");
+            // Optionally, you could set a default location here
         });
     } else {
         alert("Geolocation is not supported by this browser.");
@@ -73,4 +74,4 @@ function getLocation() {
 }
 
 // Call the function to get location on page load
-getLocation();
+document.addEventListener("DOMContentLoaded", getLocation);
