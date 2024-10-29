@@ -9,23 +9,17 @@
 <body>
     <div class="container">
         <!-- Current Weather Overview -->
-        <section class="current-weather">
-            <h1>84°F</h1>
-            <p>Sunny</p>
-            <p>Location: City Name</p>
+        <section class="current-weather" id="currentWeather">
+            <h1>Loading...</h1>
+            <p>Loading...</p>
+            <p>Location: Loading...</p>
         </section>
 
         <!-- 5-Day Forecast -->
-        <section class="forecast">
+        <section class="forecast" id="forecast">
             <h2>5-Day Forecast</h2>
-            <div class="forecast-cards">
-                <!-- Example day -->
-                <div class="day-card">
-                    <p>Mon</p>
-                    <img src="sunny-icon.png" alt="Sunny">
-                    <p>68°F / 48°F</p>
-                </div>
-                <!-- Repeat similar day cards -->
+            <div class="forecast-cards" id="forecastCards">
+                <!-- Forecast cards will be populated here -->
             </div>
         </section>
 
@@ -36,11 +30,11 @@
         </section>
 
         <!-- Weather Details -->
-        <section class="weather-details">
+        <section class="weather-details" id="weatherDetails">
             <h2>Weather Details</h2>
-            <div class="detail-item">Humidity: 50%</div>
-            <div class="detail-item">Wind Speed: 11 mph</div>
-            <div class="detail-item">Pressure: 29.85 in</div>
+            <div class="detail-item">Humidity: <span id="humidity">Loading...</span></div>
+            <div class="detail-item">Wind Speed: <span id="windSpeed">Loading...</span></div>
+            <div class="detail-item">Pressure: <span id="pressure">Loading...</span></div>
         </section>
     </div>
 
