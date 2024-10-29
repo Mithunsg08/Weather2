@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #f4f4f8, #e0e7ff); /* Gradient background */
+    background: linear-gradient(135deg, #81c3ff 0%, #e0e7ff 100%); /* Gradient background */
     color: #333;
 }
 
@@ -17,6 +17,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
 }
 
 /* Current Weather */
@@ -26,6 +27,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .current-weather h1 {
